@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+<form th:action="@{/doLogin}" method="post">
+    username: <input name="username"/> <br/>
+    password: <input name="password" type="password" /> <br/>
+    <input type="hidden" name="redirectUrl" th:value="${redirectUrl}"/>
+    <input type="submit" value="Login" />
+</form>
+</body>
+</html>
